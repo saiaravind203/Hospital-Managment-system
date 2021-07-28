@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+textarea{
+  border: 1px solid #ccc;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.containerss {
+    border-radius: 50px;
+    background-color: #f2f2f2;
+    padding: 40px 100px;
+}
+
+.butn {
+            background-color:#cd2b4f;
+            color: white;
+            padding: 1px 14px;
+            border: 1px solid white;
+            border-radius: 13px;
+            cursor: pointer;
+            font-size: 17px;
+            font-family: 'Anton', sans-serif;
+        }
+
+button:hover {
+    opacity: 0.8;
+}
+
+</style>
+</head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROMINENCE HOSPITALS</title>
+  <link rel="stylesheet" href="css/prominence_css.css">
+  <link rel="stylesheet" href="responsive/responsive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Black+Ops+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav id="navbar">
+      <div id="logo">
+          <div id="logopart">
+              <img src="image10.jpg">
+          </div>
+          <div id="logotext">
+              <h3>PROMINENCE</h3>
+              <p>HOSPITALS</p>
+              <p1>estd:1950</p1>
+          </div>
+      </div>
+      <ul>
+          <li class="listitems"><a href="hospital.html">HOME</a></li>
+          <li class="listitems"><a href="6,SERVICES.html">SERVICES</a></li>
+          <li class="listitems"><a href="2,CONTACTS.html">CONTACT US</a></li>
+          <li class="listitems"><a href="3,PATIENT LOGIN.html">PATIENT LOG IN</a></li>
+          <li class="listitems"><a href="11,DOCTOR PERSONALPAGE.html">DOCTOR LOG IN</a></li>
+      </ul>
+  </nav>
+
+<div class="containerss">
+  <form action="/action_page.php" onsubmit="A(a)">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." >
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." >
+
+    <label for="country">State</label>
+    <select id="state" name="state">
+      <option value="Delhi">Delhi</option>
+      <option value="Hyderabad">Hyderabad</option>
+      <option value="Jalandhar">Jalandhar</option>
+    </select>
+    <label for="service ">Service</label>
+    <input type="text" id="service" name="service" placeholder="Enter the service you liked the most"..>
+    <label for="E-Mail I.D">E-Mail I.D</label>
+    <input type="text" id="E-Mail I.D" name="E-Mail I.D" placeholder="Your E-mail..">
+    <label for="Total Rating" >Total Rating</label>
+    <input type="text" id="Total Rating" name="num" placeholder="Total Rating out of 10..">
+    <label for="subject">Subject</label>
+    <textarea  id="subject" name="subject" placeholder="Write about the services we need to improve.." style="height:200px"></textarea>
+    <button class="butn">SUBMIT</button>
+    
+  </form>
+</div>
+
+<script>
+function A(a)
+{
+var num=A.a.value;
+ if(num==null || num=="")
+ { 
+   alert("enter the number");
+   A.a.focus();
+   return false;
+ }
+ if(isNaN(num))
+ {
+  alert("its not a valid number");
+   A.a.focus();
+   return false;
+ }
+  return true;
+}
+
+function B()
+{
+alert("Submitted successfully");
+}
+</script> 
+</body>
+</html>

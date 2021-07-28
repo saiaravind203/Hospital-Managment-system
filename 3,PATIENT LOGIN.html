@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title="Prominance Hospitals"></title>
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROMINENCE HOSPITALS</title>
+  <link rel="stylesheet" href="css/prominence_css.css">
+  <link rel="stylesheet" href="responsive/responsive.css">
+  <link rel="stylesheet" href="css/feddb.css">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Black+Ops+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+<style>
+
+form {border: 5px solid #f44336;border-radius: 15px;background-color:#f2f2f2 ; width:60%}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #f44336;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.butn {
+            background-color:#cd2b4f;
+            color: white;
+            padding: 1px 14px;
+            border: 1px solid white;
+            border-radius: 13px;
+            cursor: pointer;
+            font-size: 25px;
+            font-family: 'Anton', sans-serif;
+        }
+
+button:hover {
+    opacity: 0.8;
+}
+
+.imgcontainersss {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 20%;
+    border-radius: 50%;
+}
+
+.containersss {
+    padding: 16px;
+    color:#cd2b4f;
+    
+}
+
+span.psw {
+    float: right;
+    
+}
+
+p5{
+font-size:40px;
+color:#cd2b4f;
+font-family: 'Josefin Sans', sans-serif;
+text-align: center;
+}
+
+</style>
+</head>
+<body>
+  <nav id="navbar">
+      <div id="logo">
+          <div id="logopart">
+              <img src="image10.jpg">
+          </div>
+          <div id="logotext">
+              <h3>PROMINENCE</h3>
+              <p>HOSPITALS</p>
+              <p1>estd:1950</p1>
+          </div>
+      </div>
+      <ul>
+          <li class="listitems"><a href="hospital.html">HOME</a></li>
+          <li class="listitems"><a href="6,SERVICES.html">SERVICES</a></li>
+          <li class="listitems"><a href="2,CONTACTS.html">CONTACT US</a></li>
+          <li class="listitems"><a href="5,DEPARTMENTS.html">DEPARTMENTS</a></li>
+          <li class="listitems"><a href="3,PATIENT LOGIN.html">LOG IN</a></li>
+      </ul>
+  </nav>
+</body>
+<br>
+</br>
+<div align="center">
+  <p5>LOGIN</p5>
+</div>
+<br>
+</br>
+<div align="center">
+<form onsubmit="return abc(d)" method ="post">
+  <div class="imgcontainersss">
+    <img src="login.jpg" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="containersss">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+       
+    <button class="butn">login</button>
+      <br>
+      </br>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+    <div class="containersss" >
+      <span class="psw"><a href=>Forgot password</a></span>
+    </div>
+  </div>
+
+  
+
+</form>
+</div>
+</body>
+</html>

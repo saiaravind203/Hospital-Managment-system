@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #cd2b4f;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #cd2b4f;
+}
+
+.container {
+    width:50%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+</head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROMINENCE HOSPITALS</title>
+  <link rel="stylesheet" href="css/prominence_css.css">
+  <link rel="stylesheet" href="responsive/responsive.css">
+  <link rel="stylesheet" href="css/feddb.css">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Black+Ops+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav id="navbar">
+      <div id="logo">
+          <div id="logopart">
+              <img src="image10.jpg">
+          </div>
+          <div id="logotext">
+              <h3>PROMINENCE</h3>
+              <p>HOSPITALS</p>
+              <p1>estd:1950</p1>
+          </div>
+      </div>
+      <ul>
+          <li class="listitems"><a href="hospital.html">HOME</a></li>
+          <li class="listitems"><a href="6,SERVICES.html">SERVICES</a></li>
+          <li class="listitems"><a href="2,CONTACTS.html">CONTACT US</a></li>
+          <li class="listitems"><a href="5,DEPARTMENTS.html">DEPARTMENTS</a></li>
+          <li class="listitems"><a href="3,PATIENT LOGIN.html">LOG IN</a></li>
+      </ul>
+  </nav>
+
+<p style="color:maroon" align="center">Book Appointment</p>
+
+<div align="center">
+<div class="containerss" align="center">
+  <form onsubmit="alert('All your details are submitted')">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">state</label>
+    <select id="state" name="state">
+      <option value="Delhi">Delhi</option>
+      <option value="Hyderabad">Hyderabad</option>
+      <option value="Jalandhar">Jalandhar</option>
+    </select>
+    <label for="Mobile number">Mobile number</label>
+    <input type="text" id="Mobile number" name="Mobile number" placeholder="Your mobile number"..>
+    <label for="E-Mail I.D">E-Mail I.D</label>
+    <input type="text" id="E-Mail I.D" name="E-Mail I.D" placeholder="Your E-mail..">
+    <label for="Date">Date</label>
+    <input type="text" id="Date" name="Date" placeholder="Enter the date to book appointment..">
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Description about Health problem..." style="height:200px"></textarea>
+    <a href=""><input type = "submit" value="Submit"></a>
+  </form>
+
+
+</div>
+</div>
+</body>
+</html>
